@@ -1,0 +1,23 @@
+<krpano version="1.16">	
+	<include url="../../../xml/default.xml" />
+	<include url="../../../xml/radar.xml" />
+	
+	<!-- the pano image, set from the html -->
+	<image>
+		<cube url="pano_%$side%_%s.jpg" />
+	</image>
+	
+	<data name="is3D">false</data>	
+	<data name="povOffset">155</data>
+	<data name="povX">57</data>
+	<data name="povY">-25</data>
+	
+	<hotspot name="logo" keep="true"
+		url="../../../img/logo.png"
+		ath="0"
+		atv="90"
+		scale="0.5"
+	/>
+	
+	<hotspot name="hotspot-0" scale="0.8" style="hotspot" ath="178" atv="2" title="RuimteVoor" onclick="js(vr_loadpano(../RuimteVoor/RuimteVoor.xml))" url="../../../img/hotspot.png" />
+</krpano>

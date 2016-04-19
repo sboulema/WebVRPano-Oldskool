@@ -1,0 +1,36 @@
+<krpano version="1.16">	
+	<include url="../../../xml/default.xml" />
+	<include url="../../../xml/radar.xml" />
+	
+	<!-- the pano image, set from the html -->
+	<image>
+		<cube url="pano_%$side%_%s.jpg" />
+	</image>
+	
+	<data name="is3D">false</data>
+	<data name="povOffset">-15</data>
+	<data name="povX">0</data>
+	<data name="povY">-10</data>
+			
+	<hotspot name="hotspot-0" scale="0.8" style="hotspot" ath="-143" atv="2" title="Serverhok" onclick="js(vr_loadpano(../Serverhok/Serverhok.xml))" url="../../../img/hotspot.png" />
+	<hotspot name="hotspot-1" scale="0.8" style="hotspot" ath="-203" atv="2" title="Printerhok" onclick="js(vr_loadpano(../Printerhok/Printerhok.xml))" url="../../../img/hotspot.png" />	
+	<hotspot name="hotspot-2" scale="0.8" style="hotspot" ath="-223" atv="0" title="RuimteMiddenTwee" onclick="js(vr_loadpano(../RuimteMiddenTwee/RuimteMiddenTwee.xml))" url="../../../img/hotspot.png" />
+	<hotspot name="hotspot-3" scale="0.8" style="hotspot" ath="-263" atv="0" title="RuimteAchter" onclick="js(vr_loadpano(../RuimteAchter/RuimteAchter.xml))" url="../../../img/hotspot.png" />
+	<hotspot name="hotspot-4" scale="0.8" style="hotspot" ath="-125" atv="0" title="Keuken" onclick="js(vr_loadpano(../Keuken/Keuken.xml))" url="../../../img/hotspot.png" />
+	<hotspot name="hotspot-5" scale="0.8" style="hotspot" ath="-103" atv="0" title="WC" onclick="js(vr_loadpano(../WC/WC.xml))" url="../../../img/hotspot.png" />
+	<hotspot name="hotspot-6" scale="0.8" style="hotspot" ath="-82" atv="-1" title="RuimteVoor" onclick="js(vr_loadpano(../RuimteVoor/RuimteVoor.xml))" url="../../../img/hotspot.png" />
+	
+	<hotspot name="logo" keep="true"
+		url="../../../img/logo.png"
+		ath="0"
+		atv="90"
+		scale="0.5"
+	/>
+	
+	<plugin name="soundinterface" 
+		url="../../../js/soundinterface.js" 
+		preload="true" 
+		keep="true" 
+	/>
+	<events name="currentpano" onnewpano="playsound(bgsnd, 'panos/W133/RuimteMidden/RuimteMidden.mp3', 0);" onremovepano="stopsound(bgsnd);"></events>
+</krpano>

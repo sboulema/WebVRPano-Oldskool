@@ -1,0 +1,76 @@
+<krpano onstart="setuprift(); loadscene(get(scene[0].name), null, MERGE);">
+  <!-- the IPD and the horizontal screen size in millimeters (will be also set from the rift.html) -->
+  <!-- DK1 --><!-- <rift ipd="63.5" hsize="149.76" /> -->
+  <!-- DK2 --><rift ipd="0" hsize="126.18" />
+
+  <!-- view settings that are trying to match the Oculus Rift distortion (will be also set from the rift.html) -->
+  <!-- DK1 --><!-- <view fovtype="HFOV" stereographic="false" fov="100" fisheye="1.0" fisheyefovlink="0" limitview="off" /> -->
+  <!-- DK2 --><view fovtype="HFOV" stereographic="false" fov="94" fisheye="0.6" fisheyefovlink="0" limitview="off" />
+
+  <!-- disable mouse/keyboard control and avoid zooming -->
+	<control usercontrol="off" fovspeed="0" />
+
+	<!-- disable the fullscreen contextmenu -->
+	<contextmenu fullscreen="false" />
+
+  <events name="titleevent" onloadcomplete="js( setTitle(get(xml.scene)) );" keep="true" />
+
+  <!-- setup the <area> size and position according to the IPD setting -->
+	<action name="setuprift">
+		div(overlap, rift.ipd, rift.hsize);
+		div(overlap, 2);
+		mul(overlap, 100);
+		set(area.mode,align);
+		add(width, 100, overlap);
+		txtadd(area.width, get(width), '%%');
+		if(side == right,
+			sub(offset, 0, overlap);
+			txtadd(area.x, get(offset), '%%');
+		  );
+		if(%1 == true, show_ipd_info() );
+		 <!--showlog();--> 
+	</action>
+
+	<!-- hotspot style
+		- move the hotspot a bit to left on the right and a bit to right on the left display for a slight 'pop-out' effect
+		- process the onclick event via JS on both viewers
+	-->
+	<style name="hotspotstyle" url="../img/hotspot.png" scale="1" edge="top"
+	       onloaded="if(side == right, set(ox,-2), set(ox,+2) );"
+	       onclick="js_sync_call(do_hotspot_onclick, get(name), get(linkedscene));"
+	       />
+
+	<action name="js_sync_call">
+		js( sync_call(%1(%2,%3)) );
+	</action>
+
+  <action name="do_hotspot_onclick">
+    tween(hotspot[%1].alpha, 0.0, 0.2, default, trace(do_hotspot_onclick - %1/%2); loadscene(%2, null, NOPREVIEW|MERGE|KEEPVIEW|KEEPMOVING, BLEND(1)); );
+  </action>
+
+	<!-- zoom the hotspots when looking at them and after 2 seconds load the linked scene -->
+	<events name="testshotspots" keep="true" onviewchanged="testhotspots();" />
+
+	<action name="testhotspots">
+		for(set(i,0), i LT hotspot.count, inc(i),
+			getlooktodistance(d, hotspot[get(i)].ath, hotspot[get(i)].atv);
+			if(d LT 12,
+				hotspot_in_focus(get(i), get(hotspot[get(i)].linkedscene));
+			  ,
+				hotspot_out_of_focus(get(i), 0.5, 0.5);
+			  );
+		  );
+	</action>
+
+	<action name="hotspot_in_focus">
+    if(hotspot[%1].infocus != true,
+	      set(hotspot[%1].infocus, true);
+	      tween(hotspot[%1].scale, 1.0, 2.0, default, if(side == left, js_sync_call(do_hotspot_onclick, %1, get(hotspot[%1].linkedscene)); ); );
+	    );
+	</action>
+
+	<action name="hotspot_out_of_focus">
+	    set(hotspot[%1].infocus, false);
+	    tween(hotspot[%1].scale, 0.5, 0.5);
+	</action>
+</krpano>

@@ -1,0 +1,25 @@
+<krpano version="1.16">	
+	<layer name="border"
+		align="bottom"
+		scale="0.11"
+		y="175"
+		url="../../../img/radar_border.png"
+	/>
+	
+	<layer name="radar"
+		align="bottom"
+		edge="center"
+		scale="0.1"
+		y="220"
+		url="zolder.png"
+	/>
+ 	
+	<layer name="pov"
+		align="bottom"
+		edge="center"
+		scale="0.5"
+		y="220"
+		x="0"
+		url="../../../img/pov.png"
+	/> 
+</krpano>

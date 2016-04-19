@@ -1,0 +1,24 @@
+<krpano version="1.0.8">
+	<include url="../../../xml/default.xml" />
+	
+	<data name="is3D">false</data>	
+	<data name="povOffset">-290</data>
+	<data name="povX">0</data>
+	<data name="povY">-32</data>	
+	
+	<image type="CUBE">
+      <front url="0.jpg"/>
+      <right url="1.jpg"/>
+      <back  url="2.jpg"/>
+      <left  url="3.jpg"/>
+      <up    url="4.jpg"/>
+      <down  url="5.jpg"/>
+    </image>
+	
+	<hotspot name="hotspot-1" style="hotspot" ath="135.559809" atv="-2.068966" title="60" onclick="js(vr_loadpano(../60/60.xml))" url="../../../img/hotspot.png"/>
+	<hotspot name="hotspot-2" style="hotspot" ath="-113.511962" atv="1.034483" title="62" onclick="js(vr_loadpano(../62/62.xml))" url="../../../img/hotspot.png"/>
+	<hotspot name="hotspot-3" style="hotspot" ath="45.645933" atv="-3.103448" title="63" onclick="js(vr_loadpano(../63/63.xml))" url="../../../img/hotspot.png"/>	
+	<hotspot name="hotspot-4" style="hotspot" ath="120.401914" atv="-1.724138" title="108" onclick="js(vr_loadpano(../108/108.xml))" url="../../../img/hotspot.png"/>
+	<hotspot name="hotspot-5" style="hotspot" ath="-151.406699" atv="-4.827586" title="58" onclick="js(vr_loadpano(../58/58.xml))" url="../../../img/hotspot.png"/>
+	<hotspot name="hotspot-5" style="hotspot" ath="-152.784689" atv="-6.551724" title="53" onclick="js(vr_loadpano(../53/53.xml))" url="../../../img/hotspot.png"/>
+</krpano>

@@ -1,0 +1,172 @@
+<krpano>
+	<include url="../../xml/default.xml" />
+	
+	<scene name="voor">
+		<view hlookat="0" vlookat="0" />
+		<image>
+			<cube url="voor/tablet_%s.jpg" />
+		</image>
+		
+		<hotspot name="hotspot-1" style="hotspotstyle" ath="25.6354183510383" atv="-1.85311172653551" title="Entree-1" linkedscene="entree1" />
+	</scene>
+
+	<scene name="entree1">
+		<view hlookat="0" vlookat="0" />
+		<image>
+			<cube url="entree-1/tablet_%s.jpg" />
+		</image>
+		
+		<hotspot name="hotspot-1" style="hotspotstyle" ath="-2.84670115394874" atv="-4.46263373781062" title="Keuken" linkedscene="keuken" />
+		<hotspot name="hotspot-2" style="hotspotstyle" ath="-56.151044125825" atv="-9.62841341077284" title="Opkamer" linkedscene="opkamer" />
+		<hotspot name="hotspot-3" style="hotspotstyle" ath="-177.895396040121" atv="-8.46443719473579" title="Voor" linkedscene="voor" />
+		<hotspot name="hotspot-4" style="hotspotstyle" ath="47.2967091673994" atv="-2.12652090704589" title="Entree-2" linkedscene="entree2" />
+		<hotspot name="hotspot-5" style="hotspotstyle" ath="114.459701563111" atv="-8.50578470685545" title="Overloop" linkedscene="overloop" />
+	</scene>
+	
+	<scene name="badkamer">
+		<view hlookat="0" vlookat="0" />
+		<image>
+			<cube url="badkamer/tablet_%s.jpg" />
+		</image>
+		
+		<hotspot name="hotspot-1" style="hotspotstyle" ath="63.7273786814411" atv="-5.33272719208182" title="Entree-2" linkedscene="entree2" />
+	</scene>
+	
+	<scene name="entree2">
+		<view hlookat="0" vlookat="0" />
+		<image>
+			<cube url="entree-2/tablet_%s.jpg" />
+		</image>
+		
+		<hotspot name="hotspot-1" style="hotspotstyle" ath="-148.360506065502" atv="-1.70953709573496" title="Badkamer" linkedscene="badkamer"/>
+		<hotspot name="hotspot-2" style="hotspotstyle" ath="175.775072843397" atv="-0.0467462765404793" title="Living" linkedscene="living"/>
+		<hotspot name="hotspot-3" style="hotspotstyle" ath="86.5657121750676" atv="0.229218675888296" title="Poolhouse" linkedscene="poolhouse"/>
+		<hotspot name="hotspot-4" style="hotspotstyle" ath="-9.38576822668438" atv="-2.02927811673765" title="Entree-1" linkedscene="entree1"/>
+	</scene>
+	
+	<scene name="garderobe">
+		<view hlookat="0" vlookat="0" />
+		<image>
+			<cube url="garderobe/tablet_%s.jpg" />
+		</image>
+
+		<hotspot name="hotspot-1" style="hotspotstyle" ath="9.24339005901959" atv="-3.06485559939086" title="Walkincloset" linkedscene="walkincloset"/>
+		<hotspot name="hotspot-2" style="hotspotstyle" ath="-45.9958499208792" atv="1.21181474910341" title="Overloop" linkedscene="overloop"/>	
+	</scene>
+	
+	<scene name="keuken">
+		<view hlookat="0" vlookat="0" />
+		<image>
+			<cube url="keuken/tablet_%s.jpg" />
+		</image>
+
+		<hotspot name="hotspot-1" style="hotspotstyle" ath="-61.9395890435745" atv="-2.63973116233519" title="Entree-1" linkedscene="entree1"/>
+	</scene>
+	
+	<scene name="living">
+		<view hlookat="0" vlookat="0" />
+		<image>
+			<cube url="living/tablet_%s.jpg" />
+		</image>
+
+		<hotspot name="hotspot-1" style="hotspotstyle" ath="72.0060115392836" atv="-0.835720363477129" title="Vide" linkedscene="vide"/>
+		<hotspot name="hotspot-2" style="hotspotstyle" ath="125.602982897475" atv="0.746704428898599" title="Tuin-2" linkedscene="tuin2"/>
+		<hotspot name="hotspot-3" style="hotspotstyle" ath="5.96722716654745" atv="-2.28728328659169" title="Entree-2" linkedscene="entree2"/>
+	</scene>
+	
+	<scene name="masterbedroom">
+		<view hlookat="0" vlookat="0" />
+		<image>
+			<cube url="masterbedroom/tablet_%s.jpg" />
+		</image>
+
+		<hotspot name="hotspot-1" style="hotspotstyle" ath="162.38468776635" atv="-0.678302174912194" title="Overloop" linkedscene="overloop"/>
+	</scene>
+	
+	<scene name="opkamer">
+		<view hlookat="0" vlookat="0" />
+		<image>
+			<cube url="opkamer/tablet_%s.jpg" />
+		</image>
+
+		<hotspot name="hotspot-1" style="hotspotstyle" ath="27.2516473890656" atv="-0.339524018065897" title="Entree-1" linkedscene="entree1"/>
+	</scene>
+	
+	<scene name="overloop">
+		<view hlookat="0" vlookat="0" />
+		<image>
+			<cube url="overloop/tablet_%s.jpg" />
+		</image>
+
+		<hotspot name="hotspot-1" style="hotspotstyle" ath="-89.7071174365765" atv="1.12267644704135" title="Garderobe" linkedscene="garderobe"/>
+		<hotspot name="hotspot-2" style="hotspotstyle" ath="-64.0520931982838" atv="0.207861006050952" title="Slaapkamer" linkedscene="slaapkamer"/>
+		<hotspot name="hotspot-3" style="hotspotstyle" ath="86.3363949251385" atv="-28.6477222821989" title="Masterbedroom" linkedscene="masterbedroom"/>
+		<hotspot name="hotspot-4" style="hotspotstyle" ath="19.8669270599475" atv="14.6211968873358" title="Entree-1" linkedscene="entree1"/>
+	</scene>
+	
+	<scene name="poolhouse">
+		<view hlookat="0" vlookat="0" />
+		<image>
+			<cube url="poolhouse/tablet_%s.jpg" />
+		</image>
+
+		<hotspot name="hotspot-1" style="hotspotstyle" ath="109.684663202264" atv="4.43311751901279" title="Zwembad" linkedscene="zwembad"/>
+		<hotspot name="hotspot-2" style="hotspotstyle" ath="-59.3111729597882" atv="-0.797900503787506" title="Entree-2" linkedscene="entree2"/>
+	</scene>
+	
+	<scene name="slaapkamer">
+		<view hlookat="0" vlookat="0" />
+		<image>
+			<cube url="slaapkamer/tablet_%s.jpg" />
+		</image>
+
+		<hotspot name="hotspot-1" style="hotspotstyle" ath="146.957465065133" atv="3.60248707793089" title="Overloop" linkedscene="overloop"/>
+	</scene>
+	
+	<scene name="tuin1">
+		<view hlookat="0" vlookat="0" />
+		<image>
+			<cube url="tuin-1/tablet_%s.jpg" />
+		</image>
+
+		<hotspot name="hotspot-1" style="hotspotstyle" ath="17.5523465608405" atv="2.77888622765431" title="Tuin-2" linkedscene="tuin2"/>
+	</scene>
+	
+	<scene name="tuin2">
+		<view hlookat="0" vlookat="0" />
+		<image>
+			<cube url="tuin-2/tablet_%s.jpg" />
+		</image>
+
+		<hotspot name="hotspot-1" style="hotspotstyle" ath="15.5293286694041" atv="-3.16266880324494" title="Tuin-1" linkedscene="tuin1"/>
+		<hotspot name="hotspot-2" style="hotspotstyle" ath="-61.9665796994103" atv="2.99063414005781" title="Living" linkedscene="living"/>
+		<hotspot name="hotspot-3" style="hotspotstyle" ath="-94.2342712556997" atv="2.73704281806095" title="Voor" linkedscene="voor"/>
+	</scene>
+	
+	<scene name="vide">
+		<view hlookat="0" vlookat="0" />
+		<image>
+			<cube url="vide/tablet_%s.jpg" />
+		</image>
+
+		<hotspot name="hotspot-1" style="hotspotstyle" ath="-54.5425858701005" atv="22.1105116818675" title="Living" linkedscene="living"/>
+	</scene>
+	
+	<scene name="walkincloset">
+		<view hlookat="0" vlookat="0" />
+		<image>
+			<cube url="walkincloset/tablet_%s.jpg" />
+		</image>
+
+		<hotspot name="hotspot-1" style="hotspotstyle" ath="79.5495127929947" atv="19.6709180532574" title="Garderobe" linkedscene="garderobe"/>
+	</scene>
+	
+	<scene name="zwembad">
+		<view hlookat="0" vlookat="0" />
+		<image>
+			<cube url="zwembad/tablet_%s.jpg" />
+		</image>
+
+		<hotspot name="hotspot-1" style="hotspotstyle" ath="176.350885007215" atv="0.391885531863174" title="Poolhouse" linkedscene="poolhouse"/>
+	</scene>
+</krpano>

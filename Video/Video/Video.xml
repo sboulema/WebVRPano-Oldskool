@@ -1,0 +1,15 @@
+<krpano version="1.16">	
+	<include url="../../../xml/default.xml" />
+	
+	<data name="is3D">false</data>
+	<data name="povOffset">-140</data>
+	<data name="povX">40</data>
+	<data name="povY">14</data>
+	
+	<!-- load and control the video with the videoplayer plugin -->
+	<plugin name="video" url="../../../js/videoplayer.js" loop="true" />
+	<plugin name="video" videourl="demo.webm" />
+			
+	<!-- addtional settings for html5 to play the video as flat image -->
+	<plugin name="video" devices="html5" width="100%" height="prop" align="center" zorder="0" enabled="false" visible="false" onloaded="delayedcall(0.1, set(visible,true));" />
+</krpano>

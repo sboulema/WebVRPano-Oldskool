@@ -1,0 +1,71 @@
+<krpano version="1.16" onstart="setuprift();">
+
+	<!-- the IPD and the horizontal screen size in millimeters (change only the IPD) -->
+	<rift ipd="63.5" hsize="149.76"  />
+
+
+	<!-- view settings that are trying to match the Oculus Rift distortion -->
+	<!-- <view fovtype="HFOV" stereographic="false" fov="90" fisheye="1.50" fisheyefovlink="0" limitview="off" /> -->
+	<view fovtype="HFOV" stereographic="false" fov="100" fisheye="1.00" fisheyefovlink="0" limitview="off" />
+
+	<!-- disable mouse/keyboard control and avoid zooming -->
+	<control usercontrol="off" fovspeed="0" />
+
+	<!-- disable the fullscreen contextmenu -->
+	<contextmenu fullscreen="false" />
+
+
+	<!-- use the keyboard +/- keys to change the IPD -->
+	<events onkeydown="if(keycode==109, inc(rift.ipd,0.5);js(sync_ipd(get(rift.ipd)));); if(keycode==107, dec(rift.ipd,0.5);js(sync_ipd(get(rift.ipd))););" />
+
+
+	<!-- setup the <area> size and position according to the IPD setting -->
+	<action name="setuprift">
+		div(overlap, rift.ipd, rift.hsize);
+		div(overlap, 2);
+		mul(overlap, 100);
+		set(area.mode,align);
+		add(width, 100, overlap);
+		txtadd(area.width, get(width), '%%');
+		if(side == right,
+			sub(offset, 0, overlap);
+			txtadd(area.x, get(offset), '%%');
+		  );
+		if(%1 == true, show_ipd_info() );
+	</action>
+
+
+	<!-- show the current ipd value -->
+	<action name="show_ipd_info">
+		ifnot(layer[ipdinfo],
+			addlayer(ipdinfo);
+			set(layer[ipdinfo].url, 'textfield.swf');
+			set(layer[ipdinfo].align, center);
+			set(layer[ipdinfo].y, 50);
+			set(layer[ipdinfo].autoheight, true);
+			set(layer[ipdinfo].background, false);
+			set(layer[ipdinfo].border, false);
+			set(layer[ipdinfo].css, 'text-align:center; color:#FFFFFF; font-family:Arial; font-weight:bold; font-size:30px;');
+			set(layer[ipdinfo].textshadow, 2);
+		  );
+		copy(ipdtxt, rift.ipd);
+		roundval(ipdtxt, 1);
+		txtadd(layer[ipdinfo].html, 'IPD=', get(ipdtxt), 'mm');
+		set(layer[ipdinfo].visible,true);
+
+		stopdelayedcall(ipdhide);
+		delayedcall(ipdhide, 1.0, set(layer[ipdinfo].visible,false); );
+	</action>
+
+
+	<!-- a simple preview grid for testing the lens distortion -->
+	<!-- <preview type="grid(cube,32,32,512,0x00FF00,0x000000);" /> -->
+
+
+	<!-- the pano image, set from the html -->
+	<image>
+		<cube url="tablet_%s.jpg" />
+	</image>
+	
+	<hotspot name="hotspot-1" style="hotspot" ath="7.18258922731496" atv="-4.78055066532881" title="Entree" onclick="js(vr_loadpano(../Entree/Entree.xml))" url="../../../img/hotspot.png"/>
+</krpano>

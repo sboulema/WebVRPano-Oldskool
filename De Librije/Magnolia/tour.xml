@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<krpano>
+  <include url="xml/default.xml" />
+	<scene name="pano603">
+		<image>
+			<cube url="pano603/tablet_%s.jpg" />
+		</image>	
+		<hotspot name="hotspot-1" style="hotspotstyle" ath="-90.706436" atv="1.132075" title="pano604" linkedscene="pano604" />
+		<hotspot name="hotspot-2" style="hotspotstyle" ath="-142.135008" atv="0.000000" title="pano605" linkedscene="pano605" />		
+	</scene>
+	<scene name="pano604">
+		<image>
+			<cube url="pano604/tablet_%s.jpg" />
+		</image>		
+		<hotspot name="hotspot-1" style="hotspotstyle" ath="12.715856" atv="-2.264151" title="pano603" linkedscene="pano603" />
+		<hotspot name="hotspot-2" style="hotspotstyle" ath="-167.566719" atv="-1.132075" title="pano599" linkedscene="pano599" />
+	</scene>
+	<scene name="pano605">
+		<image>
+			<cube url="pano605/tablet_%s.jpg" />
+		</image>
+		<hotspot name="hotspot-1" style="hotspotstyle" ath="159.089482" atv="-1.132075" title="pano603" linkedscene="pano603" />
+	</scene>
+	<scene name="pano599">
+		<image>
+			<cube url="pano599/tablet_%s.jpg" />
+		</image>
+		<hotspot name="hotspot-1" style="hotspotstyle" ath="76.012559" atv="3.396226" title="pano604" linkedscene="pano604" />
+		<hotspot name="hotspot-2" style="hotspotstyle" ath="-161.915228" atv="-1.132075" title="pano600" linkedscene="pano600" />
+	</scene>
+	<scene name="pano600">
+		<image>
+			<cube url="pano600/tablet_%s.jpg" />
+		</image>
+		<hotspot name="hotspot-1" style="hotspotstyle" ath="-124.050235" atv="3.962264" title="pano599" linkedscene="pano599" />
+		<hotspot name="hotspot-2" style="hotspotstyle" ath="-13.846154" atv="2.264151" title="pano601" linkedscene="pano601" />
+	</scene>
+	<scene name="pano601">
+		<image>
+			<cube url="pano601/tablet_%s.jpg" />
+		</image>
+		<hotspot name="hotspot-1" style="hotspotstyle" ath="91.271586" atv="0.000000" title="pano602" linkedscene="pano602" />
+		<hotspot name="hotspot-2" style="hotspotstyle" ath="-60.188383" atv="0.566038" title="pano600" linkedscene="pano600" />
+	</scene>
+	<scene name="pano602">
+		<image>
+			<cube url="pano602/tablet_%s.jpg" />
+		</image>
+		<hotspot name="hotspot-1" style="hotspotstyle" ath="147.786499" atv="3.396226" title="pano601" linkedscene="pano601" />
+	</scene>
+</krpano>

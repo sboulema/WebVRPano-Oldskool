@@ -1,0 +1,16 @@
+<krpano version="1.0.8">
+	<include url="../../../xml/default.xml" />
+	
+	<data name="is3D">false</data>	
+	<data name="povOffset">-290</data>
+	<data name="povX">0</data>
+	<data name="povY">-32</data>
+	
+	<image>
+		<cube url="tablet_%s.jpg" />
+	</image>	
+
+	<hotspot name="hotspot-1" style="hotspot" ath="489" atv="-30" title="Tuin-1" onclick="js(vr_loadpano(../0277459c-db0d-4d21-a722-db45312dd30c/0277459c-db0d-4d21-a722-db45312dd30c.xml))" url="../../../img/hotspot.png"/>
+	<hotspot name="hotspot-2" style="hotspot" ath="405" atv="0" title="Entree-17" onclick="js(vr_loadpano(../c6d12114-cf2f-47b0-8001-c84ec269b64b/c6d12114-cf2f-47b0-8001-c84ec269b64b.xml))" url="../../../img/hotspot.png"/>
+	<hotspot name="hotspot-3" style="hotspot" ath="260" atv="1" title="Entree-12" onclick="js(vr_loadpano(../694cff4f-56c9-45d4-9a85-dee73fc7c03d/694cff4f-56c9-45d4-9a85-dee73fc7c03d.xml))" url="../../../img/hotspot.png"/>
+</krpano>

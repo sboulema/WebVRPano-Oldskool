@@ -1,0 +1,19 @@
+<krpano version="1.0.8">
+	<include url="../../../xml/default.xml" />
+	<include url="../Plattegrond/Beganegrond.xml" />
+	
+	<data name="is3D">false</data>	
+	<data name="povOffset">-190</data>
+	<data name="povX">-20</data>
+	<data name="povY">-32</data>
+	
+	<image>
+		<cube url="tablet_%s.jpg" />
+	</image>
+	
+	<hotspot name="hotspot-1" style="hotspot" ath="-2.84670115394874" atv="-4.46263373781062" title="Keuken" onclick="js(vr_loadpano(../Keuken/Keuken.xml))" url="../../../img/hotspot.png"/>
+	<hotspot name="hotspot-2" style="hotspot" ath="-56.151044125825" atv="-9.62841341077284" title="Opkamer" onclick="js(vr_loadpano(../Opkamer/Opkamer.xml))" url="../../../img/hotspot.png"/>
+	<hotspot name="hotspot-3" style="hotspot" ath="-177.895396040121" atv="-8.46443719473579" title="Voor" onclick="js(vr_loadpano(../Voor/Voor.xml))" url="../../../img/hotspot.png"/>
+	<hotspot name="hotspot-4" style="hotspot" ath="47.2967091673994" atv="-2.12652090704589" title="Entree-2" onclick="js(vr_loadpano(../Entree-2/Entree-2.xml))" url="../../../img/hotspot.png"/>
+	<hotspot name="hotspot-5" style="hotspot" ath="114.459701563111" atv="-8.50578470685545" title="Overloop" onclick="js(vr_loadpano(../Overloop/Overloop.xml))" url="../../../img/hotspot.png"/>
+</krpano>

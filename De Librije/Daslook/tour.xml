@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<krpano>
+  <include url="xml/default.xml" />
+	<scene name="pano589">
+		<image>
+			<cube url="pano589/tablet_%s.jpg" />
+		</image>	
+		<hotspot name="hotspot-1" style="hotspotstyle" ath="104.270016" atv="-0.566038" title="pano591" linkedscene="pano591" />
+	</scene>
+	<scene name="pano591">
+		<image>
+			<cube url="pano591/tablet_%s.jpg" />
+		</image>		
+		<hotspot name="hotspot-1" style="hotspotstyle" ath="107.660911" atv="1.132075" title="pano589" linkedscene="pano589" />
+		<hotspot name="hotspot-2" style="hotspotstyle" ath="174.913658" atv="2.264151" title="pano590" linkedscene="pano590" />	
+	</scene>
+	<scene name="pano590">
+		<image>
+			<cube url="pano590/tablet_%s.jpg" />
+		</image>
+		<hotspot name="hotspot-1" style="hotspotstyle" ath="-99.748823" atv="1.132075" title="pano591" linkedscene="pano591" />
+	</scene>
+</krpano>

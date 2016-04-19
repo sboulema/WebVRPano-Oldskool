@@ -1,0 +1,17 @@
+<krpano version="1.0.8">
+	<include url="../../../xml/default.xml" />
+	
+	<data name="is3D">false</data>	
+	<data name="povOffset">-290</data>
+	<data name="povX">0</data>
+	<data name="povY">-32</data>
+	
+	<image>
+		<cube url="tablet_%s.jpg" />
+	</image>	
+	
+	<hotspot name="hotspot-1" style="hotspot" ath="183" atv="0" title="Entree-15" onclick="js(vr_loadpano(../6d4b1c19-4015-49ad-83b2-f408680a1009/6d4b1c19-4015-49ad-83b2-f408680a1009.xml))" url="../../../img/hotspot.png"/>
+	<hotspot name="hotspot-2" style="hotspot" ath="460" atv="5" title="Entree-20" onclick="js(vr_loadpano(../2e312688-090e-41c8-87cf-61edefdb02d1/2e312688-090e-41c8-87cf-61edefdb02d1.xml))" url="../../../img/hotspot.png"/>
+	<hotspot name="hotspot-3" style="hotspot" ath="409" atv="0" title="Entree-3" onclick="js(vr_loadpano(../9b89056b-51dd-4d1f-aa01-aa9964f2c053/9b89056b-51dd-4d1f-aa01-aa9964f2c053.xml))" url="../../../img/hotspot.png"/>
+	<hotspot name="hotspot-4" style="hotspot" ath="264" atv="0" title="Entree-4" onclick="js(vr_loadpano(../74474c1a-999b-44a2-a261-8d4ba53157ed/74474c1a-999b-44a2-a261-8d4ba53157ed.xml))" url="../../../img/hotspot.png"/>
+</krpano>

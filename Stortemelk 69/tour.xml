@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<krpano>
+  <include url="../../xml/default.xml" />
+  <scene name="woonkamer">
+    <image>
+      <cube url="woonkamer/tablet_%s.jpg" />
+    </image>
+    <hotspot name="hotspot-1" style="hotspotstyle" ath="-7.17933332983233" atv="5.99921672811261" title="Dakterras" linkedscene="dakterras" />
+    <hotspot name="hotspot-2" style="hotspotstyle" ath="64.8700307672418" atv="10.4137187627741" title="Slaapkamer" linkedscene="slaapkamer" />
+  </scene>
+  <scene name="slaapkamer">
+    <image>
+      <cube url="slaapkamer/tablet_%s.jpg" />
+    </image>
+    <hotspot name="hotspot-1" style="hotspotstyle" ath="74.9609756172288" atv="20.9676619609455" title="Woonkamer" linkedscene="woonkamer" />
+  </scene>
+  <scene name="dakterras">
+    <image>
+      <cube url="dakterras/tablet_%s.jpg" />
+    </image>
+    <hotspot name="hotspot-1" style="hotspotstyle" ath="114.922448756628" atv="9.64921218146135" title="Woonkamer" linkedscene="woonkamer" />
+  </scene>
+</krpano>

@@ -1,0 +1,15 @@
+<krpano version="1.0.8">
+	<include url="../../../xml/default.xml" />
+	<include url="../Plattegrond/Verdieping.xml" />
+	
+	<data name="is3D">false</data>	
+	<data name="povOffset">90</data>
+	<data name="povX">-15</data>
+	<data name="povY">0</data>
+	
+	<image>
+		<cube url="tablet_%s.jpg" />
+	</image>
+	
+	<hotspot name="hotspot-1" style="hotspot" ath="162.38468776635" atv="-0.678302174912194" title="Overloop" onclick="js(vr_loadpano(../Overloop/Overloop.xml))" url="../../../img/hotspot.png"/>
+</krpano>

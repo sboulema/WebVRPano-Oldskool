@@ -1,0 +1,21 @@
+<krpano version="1.0.8">
+	<include url="../../../xml/default.xml" />
+	
+	<data name="is3D">false</data>	
+	<data name="povOffset">-290</data>
+	<data name="povX">0</data>
+	<data name="povY">-32</data>	
+	
+	<image type="CUBE">
+      <front url="0.jpg"/>
+      <right url="1.jpg"/>
+      <back  url="2.jpg"/>
+      <left  url="3.jpg"/>
+      <up    url="4.jpg"/>
+      <down  url="5.jpg"/>
+    </image>
+	
+	<hotspot name="hotspot-1" style="hotspot" ath="150.028708" atv="-2.758621" title="59" onclick="js(vr_loadpano(../59/59.xml))" url="../../../img/hotspot.png"/>
+	<hotspot name="hotspot-2" style="hotspot" ath="52.191388" atv="2.068966" title="56" onclick="js(vr_loadpano(../56/56.xml))" url="../../../img/hotspot.png"/>
+	<hotspot name="hotspot-3" style="hotspot" ath="-126.602871" atv="-3.103448" title="61" onclick="js(vr_loadpano(../61/61.xml))" url="../../../img/hotspot.png"/>	
+</krpano>

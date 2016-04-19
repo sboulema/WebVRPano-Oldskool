@@ -1,0 +1,15 @@
+<krpano version="1.0.8">
+	<include url="../../../xml/default.xml" />
+	<include url="../Plattegrond/Beganegrond.xml" />
+		
+	<data name="is3D">false</data>	
+	<data name="povOffset">270</data>
+	<data name="povX">10</data>
+	<data name="povY">10</data>
+	
+	<image>
+		<cube url="tablet_%s.jpg" />
+	</image>
+	
+	<hotspot name="hotspot-1" style="hotspot" ath="176.350885007215" atv="0.391885531863174" title="Poolhouse" onclick="js(vr_loadpano(../Poolhouse/Poolhouse.xml))" url="../../../img/hotspot.png"/>
+</krpano>
